@@ -1,0 +1,19 @@
+-------------------------
+Installation instructions
+-------------------------
+
+1. Requirements
+---------------
+To compile inotify-sync, the following tools need to be installed:
+- GCC
+- GNU make
+
+2. Compilation
+--------------
+Assuming you are in the top source directory, execute the following commands:
+
+./configure
+make
+make install
+
+Then you can use it.

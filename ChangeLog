@@ -1,0 +1,14 @@
+Change Log
+
+2012-10-29 - v0.3.0
+ * fix a compilation error,  issue 1 
+ * project is changed into pure C
+
+2013-02-06 - v0.4.0
+ * fix segmentation fault when rename directory in watched directory
+ * use python script instead of shell script in action
+ * use libconfuse to manage config file
+ * add log module to print event log message
+
+2013-02-06 - v0.4.1
+ * fix make install problem

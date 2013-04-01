@@ -1,0 +1,42 @@
+inotify-sync
+----------------
+
+Copyright (C) 2010-2012, inotify-sync developers and inotify-sync contributors
+Copyright (C) 2010-2012, Cohesion Network Security Studio
+
+Overview
+--------
+
+inotify-sync is a free, open source file synchronizer and file system watcher
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+Features
+--------
+
+- monitor file system events like CREATE, DELETE, MODIFIED, MOVED IN,
+  MOVED OUT, MOVE INSIDE in directory you set up
+- log those events in log file or print them on screen
+- synchronize those events or some of them to target directory you set up
+
+Supported systems
+-----------------
+
+inotify-sync has been tested on the following platforms:
+- Several major Linux distributions(with 2.6.13 Linux kernel or higher)
+
+Tested architectures:
+- x86
+- x86-64 / amd64
+- powerpc
+
+inotify-sync may be able to run on additional systems and architectures.
+
+Contact
+-------
+
+Project website: http://code.google.com/p/inotify-sync/
+Project leader:  mailto:leeyiw@gmail.com
