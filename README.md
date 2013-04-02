@@ -29,4 +29,4 @@ Tested architectures:
 inotify-sync may be able to run on additional systems and architectures.
 
 ## Contact
-  * [leeyiw@gmail.com]
+  * leeyiw@gmail.com
