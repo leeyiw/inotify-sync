@@ -22,6 +22,7 @@ This program is free software; you can redistribute it and/or modify it under th
 
 inotify-sync has been tested on the following platforms:
   * Several major Linux distributions(with 2.6.13 Linux kernel or higher)
+
 Tested architectures:
   * x86
   * x86-64 / amd64
