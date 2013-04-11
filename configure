@@ -682,6 +682,7 @@ ac_subst_files=''
 ac_user_opts='
 enable_option_checking
 enable_debug
+with_mysql
 enable_dependency_tracking
 '
       ac_precious_vars='build_alias
@@ -1311,6 +1312,11 @@ Optional Features:
   --enable-debug          compile with debug info
   --disable-dependency-tracking  speeds up one-time build
   --enable-dependency-tracking   do not reject slow dependency extractors
+
+Optional Packages:
+  --with-PACKAGE[=ARG]    use PACKAGE [ARG=yes]
+  --without-PACKAGE       do not use PACKAGE (same as --with-PACKAGE=no)
+  --with-mysql            with mysql log support
 
 Some influential environment variables:
   CC          C compiler command
@@ -2734,6 +2740,21 @@ $as_echo "#define DEBUG 1" >>confdefs.h
 
 else
   CFLAGS="-O2"
+
+fi
+
+
+# Check whether --with-mysql was given.
+if test "${with_mysql+set}" = set; then :
+  withval=$with_mysql; with_mysql="yes"
+else
+  with_mysql="no"
+
+fi
+
+if test "x$with_mysql" != "xno"; then :
+
+$as_echo "#define WITH_MYSQL 1" >>confdefs.h
 
 fi
 

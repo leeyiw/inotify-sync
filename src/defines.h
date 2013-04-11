@@ -2,7 +2,7 @@
 /* src/defines.h.in.  Generated from configure.in by autoheader.  */
 
 /* Define to 1 if --enable-debug */
-#define DEBUG 1
+/* #undef DEBUG */
 
 /* Define to 1 if you have the `dup2' function. */
 #define HAVE_DUP2 1
@@ -102,6 +102,9 @@
 
 /* Version number of package */
 #define VERSION "0.4.1"
+
+/* Define to 1 if --with-mysql */
+/* #undef WITH_MYSQL */
 
 /* Define for Solaris 2.5.1 so the uint32_t typedef from <sys/synch.h>,
    <pthread.h>, or <semaphore.h> is not used. If the typedef were allowed, the

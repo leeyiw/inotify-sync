@@ -48,7 +48,7 @@ am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
 am_inotify_sync_OBJECTS = inotify-sync.$(OBJEXT) config.$(OBJEXT) \
 	event_handler.$(OBJEXT) event_watcher.$(OBJEXT) \
-	utils.$(OBJEXT) log.$(OBJEXT)
+	utils.$(OBJEXT) log.$(OBJEXT) db.$(OBJEXT)
 inotify_sync_OBJECTS = $(am_inotify_sync_OBJECTS)
 inotify_sync_DEPENDENCIES = @LIBOBJS@
 DEFAULT_INCLUDES = -I.@am__isrc@
@@ -153,7 +153,8 @@ top_srcdir = @top_srcdir@
 AUTOMAKE_OPTIONS = gnu
 AM_CFLAGS = -DCONF_PATH=\"${sysconfdir}/inotify-sync.conf\"
 inotify_sync_SOURCES = inotify-sync.c config.c config.h event_handler.c \
-event_handler.h event_watcher.c event_watcher.h utils.c utils.h log.c log.h
+event_handler.h event_watcher.c event_watcher.h utils.c utils.h log.c log.h \
+db.c db.h
 
 inotify_sync_LDADD = @LIBOBJS@
 all: defines.h
@@ -256,6 +257,7 @@ distclean-compile:
 	-rm -f *.tab.c
 
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/config.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/db.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/event_handler.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/event_watcher.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/inotify-sync.Po@am__quote@

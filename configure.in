@@ -7,7 +7,7 @@ AM_INIT_AUTOMAKE(inotify-sync, 0.4.1)
 AC_CONFIG_SRCDIR([src/inotify-sync.c])
 AC_CONFIG_HEADERS([src/defines.h])
 
-AC_ARG_ENABLE([debug],
+AC_ARG_ENABLE(debug,
 	[AS_HELP_STRING([--enable-debug], [compile with debug info])],
 	[enable_debug="yes"],
 	[enable_debug="no"]
@@ -16,6 +16,15 @@ AS_IF([test "x$enable_debug" != "xno"],
 	CFLAGS="-O0 -g -Wall"
 	AC_DEFINE([DEBUG], [1], [Define to 1 if --enable-debug]),
 	CFLAGS="-O2"
+	)
+
+AC_ARG_WITH(mysql,
+	[AS_HELP_STRING([--with-mysql], [with mysql log support])],
+	[with_mysql="yes"],
+	[with_mysql="no"]
+	)
+AS_IF([test "x$with_mysql" != "xno"],
+	AC_DEFINE([WITH_MYSQL], [1], [Define to 1 if --with-mysql]),
 	)
 
 # Checks for programs.

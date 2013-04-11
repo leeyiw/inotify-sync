@@ -1,8 +1,5 @@
 /* src/defines.h.in.  Generated from configure.in by autoheader.  */
 
-/* Define the configuration file path */
-#undef CONF_PATH
-
 /* Define to 1 if --enable-debug */
 #undef DEBUG
 
