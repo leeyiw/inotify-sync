@@ -27,6 +27,7 @@ Tested architectures:
   * x86
   * x86-64 / amd64
   * powerpc
+
 inotify-sync may be able to run on additional systems and architectures.
 
 ## Contact
