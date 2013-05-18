@@ -212,7 +212,7 @@ void *
 event_watcher_main_loop(void *args)
 {
 	int length = 0;
-	char buf[1000] = {0};
+	char buf[sizeof(struct inotify_event) + NAME_MAX + 1] = {0};
 
 	while((length = read(fd, buf, sizeof(buf))) != -1)
 	{
