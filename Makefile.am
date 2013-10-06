@@ -17,6 +17,7 @@ inotify_sync_log_DATA =
 SUBDIRS = src
 
 install-data-hook:
+	mkdir -p $(inotify_sync_logdir)
 	sed -i -e 's;@inotify_sync_logdir@;$(inotify_sync_logdir);g' \
 		-e 's;@inotify_sync_sync_actiondir@;$(inotify_sync_sync_actiondir);g' \
 		$(inotify_sync_confdir)/inotify-sync.conf
